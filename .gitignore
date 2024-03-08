@@ -1,4 +1,4 @@
-ui/node_modules
-ui/dist
-ui/.vscode
-ui/.angular
+node_modules
+dist
+.vscode
+.angular
