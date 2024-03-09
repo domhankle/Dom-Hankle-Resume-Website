@@ -1,0 +1,15 @@
+@import '../../palettes.scss';
+
+:host {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    min-height: 10%;
+    background-color: map-get($neutral-palette, body);
+
+    .hamburger-icon {
+        font-size: 2.2rem;
+        color: map-get($neutral-palette, text);
+    }
+}

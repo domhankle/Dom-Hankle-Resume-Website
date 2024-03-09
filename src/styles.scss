@@ -1,3 +1,6 @@
+@import 'palettes.scss';
+
+//Default Reset
 /* Box sizing rules */
 *,
 *::before,
@@ -71,4 +74,27 @@ select {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+//Typography
+html {
+    font-size: 12px;
+}
+
+@mixin roboto-basics {
+    font-family: "Roboto", sans-serif;
+}
+
+.normal-text {
+    @include roboto-basics;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: map-get($neutral-palette, text);
+}
+
+.title-text {
+    @include roboto-basics;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: map-get($neutral-palette, text);
 }
